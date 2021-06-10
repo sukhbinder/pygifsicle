@@ -1,32 +1,26 @@
-# winsay
-Say command in windows
+# PYGIFSICLE
+Drive Gifsicle from python
 
-```
-say -h
-usage: say [-h] [-i INPUT] [text [text ...]]
+    Run gifsicle 
 
-Say in windows
+    example usage :
 
-positional arguments:
-  text                  sentence to speak
+    gif  - This will print the help
 
-optional arguments:
-  -h, --help            show this help message and exit
-  -i INPUT, --input INPUT
-                        Text File to speak
-```
+    gif -O gif_file_name.gif optimises the given give file
 
-
-### Back Story
-
-Read the backstory for this project [here](https://sukhbinder.wordpress.com/2020/09/30/winsay/)
 
 # Install
 pip install winsay
 
+## In cmd type 
+```
+gif 
+```
+
 
 # Demo
 
-[![Check a demo](https://raw.githubusercontent.com/sukhbinder/winsay/master/img/youtube.png)](https://youtu.be/dZaV5MtG3n4)
+![]()
 
 
