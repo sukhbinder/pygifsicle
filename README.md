@@ -15,7 +15,7 @@ The command-line interface provides three subcommands for common Gifsicle operat
 Optimize a GIF file to reduce its size.
 
 ```bash
-pygifsicle optimize <input_file> [-o <output_file>] [-O3]
+gif optimize <input_file> [-o <output_file>] [-O3]
 ```
 
 **Arguments:**
@@ -25,14 +25,14 @@ pygifsicle optimize <input_file> [-o <output_file>] [-O3]
 
 **Example:**
 ```bash
-pygifsicle optimize my_animation.gif -O3
+gif optimize my_animation.gif -O3
 ```
 
 ## `resize`
 Resize a GIF file to the specified dimensions.
 
 ```bash
-pygifsicle resize <input_file> [--width <w>] [--height <h>] [-o <output_file>]
+gif resize <input_file> [--width <w>] [--height <h>] [-o <output_file>]
 ```
 
 **Arguments:**
@@ -43,14 +43,14 @@ pygifsicle resize <input_file> [--width <w>] [--height <h>] [-o <output_file>]
 
 **Example:**
 ```bash
-pygifsicle resize my_animation.gif --width 200
+gif resize my_animation.gif --width 200
 ```
 
 ## `scale`
 Scale a GIF file by a given factor.
 
 ```bash
-pygifsicle scale <input_file> --factor <f> [-o <output_file>]
+gif scale <input_file> --factor <f> [-o <output_file>]
 ```
 
 **Arguments:**
@@ -60,5 +60,5 @@ pygifsicle scale <input_file> --factor <f> [-o <output_file>]
 
 **Example:**
 ```bash
-pygifsicle scale my_animation.gif --factor 0.5
+gif scale my_animation.gif --factor 0.5
 ```
