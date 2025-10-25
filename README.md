@@ -1,26 +1,64 @@
 # PYGIFSICLE
-Drive Gifsicle from python
+A Python wrapper for the Gifsicle command-line tool.
 
-    Run gifsicle 
+This package provides a convenient way to use Gifsicle from Python, with a user-friendly command-line interface for common operations.
 
-    example usage :
-
-    gif  - This will print the help
-
-    gif -O gif_file_name.gif optimises the given give file
-
-
-# Install
-pip install winsay
-
-## In cmd type 
-```
-gif 
+# Installation
+```bash
+pip install pygifsicle
 ```
 
+# Usage
+The command-line interface provides three subcommands for common Gifsicle operations:
 
-# Demo
+## `optimize`
+Optimize a GIF file to reduce its size.
 
-![]()
+```bash
+gif optimize <input_file> [-o <output_file>] [-O3]
+```
 
+**Arguments:**
+*   `input_file`: The GIF file to optimize.
+*   `-o, --output`: The output file. If not specified, a new file with the `_o` suffix will be created.
+*   `-O3`: Use optimization level 3 (slower, but better results).
 
+**Example:**
+```bash
+gif optimize my_animation.gif -O3
+```
+
+## `resize`
+Resize a GIF file to the specified dimensions.
+
+```bash
+gif resize <input_file> [--width <w>] [--height <h>] [-o <output_file>]
+```
+
+**Arguments:**
+*   `input_file`: The GIF file to resize.
+*   `--width`: The new width.
+*   `--height`: The new height.
+*   `-o, --output`: The output file. If not specified, a new file with the `_o` suffix will be created.
+
+**Example:**
+```bash
+gif resize my_animation.gif --width 200
+```
+
+## `scale`
+Scale a GIF file by a given factor.
+
+```bash
+gif scale <input_file> --factor <f> [-o <output_file>]
+```
+
+**Arguments:**
+*   `input_file`: The GIF file to scale.
+*   `--factor`: The scaling factor.
+*   `-o, --output`: The output file. If not specified, a new file with the `_o` suffix will be created.
+
+**Example:**
+```bash
+gif scale my_animation.gif --factor 0.5
+```
